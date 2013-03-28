@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>LeverPulley</title>	
+</head>
+<body>
+
+	<h1>LeverPulley</h1>
+
+	<script type="text/javascript" src="lever.js"></script>	
+	<script type="text/javascript">
+		lp('_','underscore-1.4.3.min.js',function() {
+			lp._.hoist({total:0})
+				.each ([0,1,2,3,4,5,6,7,8], function(val,key) { this.total+=val; })
+				.done (function(response){ console.log(response.total); });
+		});
+	</script>
+	
+</body>
+</html>
