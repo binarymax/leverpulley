@@ -36,7 +36,7 @@ var lp = window.lp = (function(){
 				for(var i=0,l=arguments.length,val;i<l;i++) {
 					val = arguments[i];
 					data.params[i] = {
-						value:_.isFunction(val)?val.toString():val,
+						value:isFunc(val)?val.toString():val,
 						type:typeof val
 					};
 				}
